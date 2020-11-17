@@ -19,4 +19,10 @@ public class LibraryTest {
     public void checkLibraryIsEmpty(){
         assertEquals(0, library.booksCount());
     }
+
+    @Test
+    public void checkBookCount(){
+        library.addBook(book);
+        assertEquals(1, library.booksCount());
+    }
 }
