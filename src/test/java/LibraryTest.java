@@ -10,7 +10,7 @@ public class LibraryTest {
 
     @Before
     public void setUp(){
-        library = new Library();
+        library = new Library(3);
         book = new Book("Sinuhe", "Waltari", "hist fiction");
 
     }
@@ -24,5 +24,22 @@ public class LibraryTest {
     public void checkBookCount(){
         library.addBook(book);
         assertEquals(1, library.booksCount());
+    }
+
+    @Test
+    public void CanAddBookIfCapacity(){
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(3, library.booksCount());
+    }
+
+    @Test
+    public void CanAddBookIfOverCapacity(){
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(3, library.booksCount());
     }
 }

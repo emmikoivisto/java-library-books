@@ -14,6 +14,6 @@ public class BookTest {
 
 //    @Test
 //    public void checkBookHasTitle(){
-//        assertEquals("Sinuhe", book.title);
+//        assertEquals("Sinuhe", this.book.title);
 //    }
 }
