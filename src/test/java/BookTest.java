@@ -12,8 +12,8 @@ public class BookTest {
         book = new Book("Sinuhe", "Mikael Waltari", "historical fiction");
     }
 
-//    @Test
-//    public void checkBookHasTitle(){
-//        assertEquals("Sinuhe", this.book.title);
-//    }
+    @Test
+    public void checkBookHasTitle(){
+        assertEquals("Sinuhe", this.book.getTitle());
+    }
 }
